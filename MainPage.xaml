@@ -3,39 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="InteractiveRatingComponent.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+        <Label Text="RATE US" />
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+        <Frame>
+            <VerticalStackLayout>
+                <Label Text="How did we go?" />
+                <Label Text="Please let us know how we did with your support request. All feedback appreciated to help us improve our offering!" />
+                <HorizontalStackLayout>
+                    <Image Source="star_fill_nothover.png" />
+                    <Image Source="star_fill_nothover.png" />
+                    <Image Source="star_fill_nothover.png" />
+                    <Image Source="star_fill_nothover.png" />
+                    <Image Source="star_fill_nothover.png" />
+                </HorizontalStackLayout>
+                <Button Text="Submit" />
+            </VerticalStackLayout>
+        </Frame>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>
-    </ScrollView>
+    </VerticalStackLayout>
 
 </ContentPage>
