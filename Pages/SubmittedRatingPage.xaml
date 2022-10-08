@@ -2,12 +2,17 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="InteractiveRatingComponent.Pages.SubmittedRatingPage">
-    <Frame HorizontalOptions="Center"
-           VerticalOptions="Center">
-        <VerticalStackLayout>
-            <Image Source="sent.png" />
-            <Label Text="Thank you!" />
-            <Label Text="We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!" />
-        </VerticalStackLayout>
-    </Frame>
+
+    <VerticalStackLayout VerticalOptions="Center"
+                         Padding="30,0">
+        <Frame>
+            <VerticalStackLayout>
+                <Image Source="sent.png" />
+                <Label Text="Thank you!"
+                       Style="{StaticResource h1}" />
+                <Label Text="We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!" />
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+    
 </ContentPage>
