@@ -21,7 +21,8 @@
                     <Image Source="star_fill_nothover.png" />
                     <Image Source="star_fill_nothover.png" />
                 </HorizontalStackLayout>
-                <Button Text="Submit" />
+                <Button Text="Submit"
+                        Clicked="Button_Clicked"/>
             </VerticalStackLayout>
         </Frame>
 

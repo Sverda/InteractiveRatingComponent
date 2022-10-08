@@ -10,4 +10,8 @@
         ContentTemplate="{DataTemplate pages:RatingPage}"
         Route="RatingPage" />
 
+    <ShellContent
+        ContentTemplate="{DataTemplate pages:SubmittedRatingPage}"
+        Route="SubmittedRatingPage" />
+
 </Shell>
